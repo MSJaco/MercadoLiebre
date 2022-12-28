@@ -19,54 +19,29 @@ p {
 
 header {
    background-color: #EAC926;
-   height: 35vh;
-}
-
-.header-top{
-   border: dotted 2px red;
-   padding: 10%;
-   display: flex;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   
+   height: 80%;
 }
 
 .logo {
-   display: inline-block;
    width: 50%;
 }
-
 
 .place-holder {
    display: inline;
    margin: 0px 0px 0px 22px;
    font-family: "Roboto", "sans-serif";
-   font-size: 14px;
-   width: 188px;
-   border: solid 1px gray;
-   border-radius: 5%;
-   align-items: center;
-}
-
-.lupa {
-   display: inline;
-   background-color: #ebebeb;
-   border: solid 1px gray;
-   font-size: 100%;
-   border-radius: 10%;
-   align-items: center;
-   margin: 0px;
-}
-
-.fa-magnifying-glass {
-   padding: 0.5px;
-   font-size: 14px;
-}
-
-.cuotas {
-   font-family: "Roboto", "sans-serif";
    font-size: 15px;
-   margin: 0px;
+   width: 200px;
+   border: solid 1px gray;
+   border-radius: 0.3ch;
+   align-items: center;
+}
+
+.cuotas1 {
+   display: block;
+   font-family: "Roboto", "sans-serif";
+   font-size: 12px;
+   margin: 15px 10px;
    font-weight: 400px;
    text-align: center;
    align-items: center;
@@ -98,13 +73,13 @@ a {
    border-radius: 15%;
 }
 
-.banner{
+.banner {
    width: 100%;
 }
 
 main {
    width: 100%;
-   padding-bottom: 5px;
+   padding-bottom: 15px;
 }
 
 
@@ -113,6 +88,7 @@ main {
    font-family: "Roboto", "sans-serif";
    font-size: 24px;
    margin-left: 7.5%;
+   font-weight: bolder;
 }
 
 h4 {
@@ -120,7 +96,6 @@ h4 {
    font-weight: lighter;
    color: #8a8a8a;
    margin: 0px 0px 4px 2px;
-   padding-left: 3px;
 }
 
 .separador {
@@ -140,7 +115,7 @@ h4 {
    width: 33%;
 }
 
-.productos-img{
+.productos-img {
    display: block;
    width: 100%;
    box-sizing: border-box;
@@ -153,7 +128,7 @@ h4 {
    position: relative;
 }
 
-main section article i{
+main section article i {
    display: block;
    font-size: 16px;
    color: #39b54a;
@@ -194,7 +169,7 @@ main section article i{
 
 footer {
    background-color: white;
-   padding-top: 15px;
+   padding-top: 10px;
 }
 
 .footer {
@@ -236,27 +211,66 @@ footer {
 
 }
 
-@media (max-width: 361px) {
+@media (max-width: 425px) {
 
-   .place-holder {
+   .header-tres {
       display: none;
    }
-   
-   header article i {
-      background-color: white;
-      display: block;
-      font-size: 100%;
-      width: 78px;
-      height: 80%;
-      border-radius: 25%;
+
+   .header-top {
+      padding: 30px 40px 5px 40px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+   }
+
+   .logo1 {
       align-items: center;
-      margin: 0px;
+      width: 54%;
+      margin-bottom: 10px;
    }
 
-   .fa-magnifying-glass {
-      font-size: 14px;
+   .buscador-tablet-desktop {
+      display: none;
    }
 
+   .buscador-mobile {
+      display: flex;
+      position: relative;
+      align-items: center;
+      margin-top: auto;
+   }
+
+   .buscador-mobile input {
+      margin-bottom: 7px;
+      padding: 12px 10px 12px 10px;
+      width: 41vw;
+      height: 74%;
+      border-radius: 0.7ch;
+      outline: none;
+   }
+
+   .buscador-mobile i {
+      position: absolute;
+      font-size: 13px;
+      right: 3px;
+      top: 14.5px;
+      font-weight: bold;
+      color: rgb(29, 29, 29);
+   }
+
+   .place-holder {
+      display: inline;
+      margin: 0px 0px 0px 15px;
+      font-family: "Roboto", "sans-serif";
+      font-size: 12px;
+      border: solid 1px #ebebeb;
+      align-items: center;
+   }
+
+   .lupa {
+      display: none;
+   }
 
    main section article h4,
    nav ul {
@@ -277,17 +291,113 @@ footer {
    }
 }
 
-@media (min-width: 361px) {
+@media (min-width: 426px) {
 
-   header {
-      background-color: #EAC926;
-      height: 55vh;
+   .header-top {
+      display: none;
+   }
+
+   .cuotas1{
+      display: none;
+   }
+
+   .buscador-mobile {
+      display: none;
+   }
+
+  header{
+      height: 13em;
+   }
+
+   .header-tres {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      padding: 30px 20px 35px 20px;
+   }
+
+   .logo2 {
+      display: inline-flex;
+      width: 33%;
+   }
+
+   .buscador-tablet-desktop {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding-right: 1.5%;
+      padding-left: 2px;
+      padding-top: 1%;
+   }
+
+   .place-holder {
+      margin: 0px;
+      font-size: 13px;
+      width: 22.5vw;
+      border-radius: 0.4ch;
+      height: fit-content;
+   }
+
+   .lupa {
+      display: inline-flex;
+      background-color: #ebebeb;
+      border: solid 1px rgb(97, 97, 97);
+      font-size: 11px;
+      border-radius: 0.4ch;
+      font-weight: bolder;
+      align-items: center;
+      margin-left: 3px;
+   }
+   
+   .fa-magnifying-glass {
+      display: inline-flex;
+      font-size: 11px;
+      margin-left: 1px;
+      padding: 3px 1px;
+      align-items: center;
+   }
+
+   .cuotas2{
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-family: "Roboto", "sans-serif";
+      font-size: 11.5px;
+      padding-right: 12px;
+      padding-left: 9px;
+      padding-top: 3%;
+      font-weight: bolder;
+   }
+
+   nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
    }
 
    nav ul {
-      visibility:visible;
+      visibility: visible;
+      display: inline-flex;
+      margin: 15px 10px 8px 25px;
+      padding: 30px 8px;
    }
 
+   nav ul li {
+      display: inline-flex;
+      justify-content: space-around;
+      padding-right: 15px;
+      font-size: 13px;
+      font-family: "Roboto", "sans-serif";
+   }
+
+   nav ul li i{
+      display: inline-block;
+      padding-left: 3px;
+      height: fit-content;
+      align-items: center;
+   }
    .burger-menu {
       display: none;
    }
@@ -303,6 +413,10 @@ footer {
       justify-content: space-evenly;
    }
 
+   .separador article {
+      margin-bottom: 25px;
+   }
+
    .productos {
       background-color: white;
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -311,12 +425,120 @@ footer {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
-   header {
-      background-color: #EAC926;
-      height: 55vh;
+   .header-top {
+      display: none;
    }
+
+   .cuotas1{
+      display: none;
+   }
+
+   .buscador-mobile {
+      display: none;
+   }
+
+   header{
+      height: 12em;
+   }
+
+   .header-tres {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      padding: 25px 85px 28px 10px;
+   }
+
+   .logo2 {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 34%;
+      margin-left: 18px;
+   }
+
+   .buscador-tablet-desktop {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding-top: 1.5%;
+      padding-right: 9%;
+      padding-left: 0px;
+   }
+
+   .place-holder {
+      padding-bottom: 0.5px;
+      font-size: 12px;
+      width: 16vw;
+      border-radius: 0.4ch;
+      height: fit-content;
+   }
+
+   .lupa {
+      display: inline-flex;
+      background-color: #ebebeb;
+      border: solid 1px rgb(97, 97, 97);
+      font-size: 11px;
+      border-radius: 0.4ch;
+      font-weight: bolder;
+      align-items: center;
+      margin-left: 3px;
+   }
+   
+   .fa-magnifying-glass {
+      display: inline-flex;
+      font-size: 11px;
+      margin-left: 1px;
+      margin-bottom: 0.5px;
+      padding: 2.5px 1px;
+      align-items: center;
+   }
+
+   .cuotas2{
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-family: "Roboto", "sans-serif";
+      font-size: 12px;
+      padding-right: 55px;
+      padding-left: 9px;
+      padding-top: 4%;
+      font-weight: bolder;
+   }
+
+   nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items:stretch;
+   }
+
+   nav ul {
+      visibility: visible;
+      display: inline-flex;
+      margin: 0px 15px;
+      padding-right: 3%;
+      padding-left: 3%;
+   }
+
+   nav ul li {
+      display: inline-flex;
+      justify-content: space-around;
+      padding-right: 15px;
+      font-size: 13px;
+      font-family: "Roboto", "sans-serif";
+   }
+
+   nav ul li i{
+      display: inline-block;
+      padding-left: 3px;
+      height: fit-content;
+      align-items: center;
+   }
+
 
    .burger-menu {
       display: none;
@@ -325,11 +547,21 @@ footer {
    .fa-bars {
       display: none;
    }
+
+   .titulares {
+      color: #575757;
+      font-family: "Roboto", "sans-serif";
+      font-size: 28px;
+      margin-left: 4.2%;
+      font-weight: 900px;
+   }
    
+
    .productos {
       background-color: white;
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
       width: 20%;
+  
    }
 
 }
