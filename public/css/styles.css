@@ -26,13 +26,13 @@ header {
    width: 50%;
 }
 
-.place-holder {
+.buscador {
    display: inline;
    margin: 0px 0px 0px 22px;
    font-family: "Roboto", "sans-serif";
    font-size: 15px;
    width: 200px;
-   border: solid 1px gray;
+   border: solid 0px gray;
    border-radius: 0.3ch;
    align-items: center;
 }
@@ -46,6 +46,7 @@ header {
    text-align: center;
    align-items: center;
 }
+
 
 nav ul {
    margin-left: 15px;
@@ -67,7 +68,7 @@ a {
 
 .fa-bars {
    color: white;
-   background-color: #1259c3;
+   background-color:  #0345a9;
    font-size: 1.5em;
    padding: 15px;
    border-radius: 15%;
@@ -293,11 +294,12 @@ footer {
 
 @media (min-width: 426px) {
 
+   
    .header-top {
       display: none;
    }
 
-   .cuotas1{
+   .cuotas1 {
       display: none;
    }
 
@@ -305,7 +307,7 @@ footer {
       display: none;
    }
 
-  header{
+   header {
       height: 13em;
    }
 
@@ -319,54 +321,55 @@ footer {
 
    .logo2 {
       display: inline-flex;
-      width: 33%;
+      width: 28%;
    }
 
    .buscador-tablet-desktop {
-      display: inline-flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      padding-right: 1.5%;
-      padding-left: 2px;
-      padding-top: 1%;
+      display: none;
    }
 
-   .place-holder {
-      margin: 0px;
+   .buscador-mobile {
+      display: flex;
+      position: relative;
+      align-items: center;
+   }
+
+   .buscador-mobile input {
+      margin-right: 25px;
+      padding: 12px 16px 12px 10px;
+      width: 37vw;
+      height: 30px;
+      border-radius: 0.7ch;
+   }
+
+   .buscador-mobile i {
+      position: absolute;
       font-size: 13px;
-      width: 22.5vw;
-      border-radius: 0.4ch;
-      height: fit-content;
+      right: 30px;
+      top: 20px;
+      font-weight: bold;
+      color: rgb(29, 29, 29);
    }
 
-   .lupa {
-      display: inline-flex;
-      background-color: #ebebeb;
-      border: solid 1px rgb(97, 97, 97);
-      font-size: 11px;
-      border-radius: 0.4ch;
-      font-weight: bolder;
-      align-items: center;
-      margin-left: 3px;
-   }
-   
-   .fa-magnifying-glass {
-      display: inline-flex;
-      font-size: 11px;
-      margin-left: 1px;
-      padding: 3px 1px;
+   .buscador {
+      display: inline;
+      margin: 0px 0px 0px 10px;
+      font-family: "Roboto", "sans-serif";
+      font-size: 12px;
+      width: 100%;
+      border: solid 1px #ebebeb;
       align-items: center;
    }
+
 
    .cuotas2{
       display: inline-flex;
       flex-direction: row;
       flex-wrap: nowrap;
       font-family: "Roboto", "sans-serif";
-      font-size: 11.5px;
-      padding-right: 12px;
-      padding-left: 9px;
-      padding-top: 3%;
+      font-size: 10px;
+      padding-right: 9px;
+      padding-top: 20px;
       font-weight: bolder;
    }
 
@@ -380,7 +383,7 @@ footer {
    nav ul {
       visibility: visible;
       display: inline-flex;
-      margin: 15px 10px 8px 25px;
+      margin: 15px 30px 8px 20px;
       padding: 30px 8px;
    }
 
@@ -392,12 +395,13 @@ footer {
       font-family: "Roboto", "sans-serif";
    }
 
-   nav ul li i{
+   nav ul li i {
       display: inline-block;
       padding-left: 3px;
       height: fit-content;
       align-items: center;
    }
+
    .burger-menu {
       display: none;
    }
@@ -423,6 +427,10 @@ footer {
       width: 40%;
    }
 
+   footer article{
+      margin-bottom: 50px;
+   }
+
 }
 
 @media (min-width: 769px) {
@@ -431,16 +439,12 @@ footer {
       display: none;
    }
 
-   .cuotas1{
+   .cuotas1 {
       display: none;
    }
 
-   .buscador-mobile {
-      display: none;
-   }
-
-   header{
-      height: 12em;
+   header {
+      height: 50%;
    }
 
    .header-tres {
@@ -448,64 +452,61 @@ footer {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-evenly;
-      padding: 25px 85px 28px 10px;
+      padding: 25px 25px 70px 10px;
    }
 
    .logo2 {
       display: inline-flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      width: 34%;
+      width: 23%;
       margin-left: 18px;
    }
 
    .buscador-tablet-desktop {
-      display: inline-flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      padding-top: 1.5%;
-      padding-right: 9%;
-      padding-left: 0px;
+      display: none;
    }
 
-   .place-holder {
-      padding-bottom: 0.5px;
+   .buscador-mobile {
+      position: relative;
+      align-items: center;
+      margin-right: 18px;
+   }
+
+   .buscador-mobile input {
+      padding: 7px;
+      width: 450px;
+      height: 30px;
+      border-radius: 0.7ch;
+   }
+
+   .buscador-mobile i {
+      position: absolute;
+      font-size: 13px;
+      right: 30px;
+      top: 24px;
+      font-weight: bold;
+      color: rgb(29, 29, 29);
+   }
+
+   .buscador {
+      display: inline;
+      margin: 0px 0px 0px 10px;
+      font-family: "Roboto", "sans-serif";
       font-size: 12px;
-      width: 16vw;
-      border-radius: 0.4ch;
-      height: fit-content;
-   }
-
-   .lupa {
-      display: inline-flex;
-      background-color: #ebebeb;
-      border: solid 1px rgb(97, 97, 97);
-      font-size: 11px;
-      border-radius: 0.4ch;
-      font-weight: bolder;
-      align-items: center;
-      margin-left: 3px;
-   }
-   
-   .fa-magnifying-glass {
-      display: inline-flex;
-      font-size: 11px;
-      margin-left: 1px;
-      margin-bottom: 0.5px;
-      padding: 2.5px 1px;
+      width: 100%;
+      border: solid 1px #ebebeb;
       align-items: center;
    }
 
-   .cuotas2{
+   .cuotas2 {
       display: inline-flex;
       flex-direction: row;
       flex-wrap: nowrap;
       font-family: "Roboto", "sans-serif";
-      font-size: 12px;
-      padding-right: 55px;
-      padding-left: 9px;
-      padding-top: 4%;
+      font-size: 11px;
       font-weight: bolder;
+      margin-top: 8px;
    }
 
    nav {
@@ -513,7 +514,6 @@ footer {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
-      align-items:stretch;
    }
 
    nav ul {
@@ -522,6 +522,7 @@ footer {
       margin: 0px 15px;
       padding-right: 3%;
       padding-left: 3%;
+      padding-top: 0px;
    }
 
    nav ul li {
@@ -532,7 +533,7 @@ footer {
       font-family: "Roboto", "sans-serif";
    }
 
-   nav ul li i{
+   nav ul li i {
       display: inline-block;
       padding-left: 3px;
       height: fit-content;
@@ -564,4 +565,119 @@ footer {
   
    }
 
+   .footer {
+      margin: 0px 15px;
+      padding: 50px 5px 10px 5px;
+      background-color: white;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+   }
+
+   .footer article {
+      padding: 0px 30px;
+   }
+
+   .descripciones {
+      font-family: "Roboto", "sans-serif";
+      color: gray;
+      font-size: 11px;
+      margin-top: 2px;
+   }
+
+   .copy-right p {
+      color: gray;
+      font-family: "Roboto", "sans-serif";
+      font-size: 13px;
+      margin-bottom: 0px;
+      padding: 0px 0px 20px 30px;
+      box-sizing: border-box;
+   }
+
+   .fa-credit-card {
+      margin-bottom: 5px;
+      font-size: 2em;
+      color: #1259c3;
+   }
+
+   .fa-gift {
+      margin-bottom: 5px;
+      font-size: 2em;
+      color: #1259c3;
+   }
+
+   .fa-user-shield {
+      margin-bottom: 5px;
+      font-size: 2em;
+      color: #1259c3;
+   }
+
+   .subtitulos {
+      font-family: "Roboto", "sans-serif";
+      margin-bottom: 0px;
+      box-sizing: border-box;
+      font-size: 16px;
+   }
+
 }
+
+@media (min-width: 1200px){
+
+   .logo2 {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 23%;
+      margin-left: 18px;
+   }
+
+   .buscador-tablet-desktop {
+      display: none;
+   }
+
+   .buscador-mobile {
+      position: relative;
+      align-items: center;
+      margin-right: 18px;
+   }
+
+   .buscador-mobile input {
+      padding: 7px;
+      width: 450px;
+      height: 30px;
+      border-radius: 0.7ch;
+   }
+
+   .buscador-mobile i {
+      position: absolute;
+      font-size: 13px;
+      right: 30px;
+      top: 44%;
+      font-weight: bold;
+      color: rgb(29, 29, 29);
+   }
+
+   .buscador {
+      display: inline;
+      margin: 0px 0px 0px 10px;
+      font-family: "Roboto", "sans-serif";
+      font-size: 12px;
+      width: 100%;
+      border: solid 1px #ebebeb;
+      align-items: center;
+   }
+
+   .cuotas2 {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-family: "Roboto", "sans-serif";
+      font-size: 13px;
+      font-weight: bolder;
+      margin-top: 1.5%;
+   }
+
+}
+
