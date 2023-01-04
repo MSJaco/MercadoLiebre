@@ -208,19 +208,35 @@ footer {
 .fa-credit-card {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
 }
+
+.fa-credit-card:hover{
+   color: #0022AA;
+}
+
 
 .fa-gift {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
+}
+
+.fa-gift:hover{
+   color: #0022AA;
 }
 
 .fa-user-shield {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
+}
+
+.fa-user-shield:hover{
+   color: #0022AA;
 }
 
 .subtitulos {

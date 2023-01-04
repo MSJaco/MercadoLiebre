@@ -68,7 +68,7 @@ a {
 
 .fa-bars {
    color: white;
-   background-color:  #0345a9;
+   background-color: #0345a9;
    font-size: 1.5em;
    padding: 15px;
    border-radius: 15%;
@@ -92,12 +92,15 @@ main {
    font-weight: bolder;
 }
 
-h4 {
+main section article h4 {
    font-family: "Roboto", "sans-serif";
    font-weight: lighter;
    color: #8a8a8a;
    margin: 0px 0px 4px 2px;
+   visibility: hidden;
 }
+
+
 
 .separador {
    display: flex;
@@ -112,7 +115,6 @@ h4 {
 
 .productos {
    background-color: white;
-   box-shadow: 0px 0px 10px rgb (100, 100, 100);
    width: 33%;
 }
 
@@ -143,6 +145,7 @@ main section article i {
    right: 20px;
    top: -15px;
    box-sizing: border-box;
+   transition: transform 450ms;
 }
 
 .precio {
@@ -190,19 +193,35 @@ footer {
 .fa-credit-card {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
 }
+
+.fa-credit-card:hover{
+   color: #0022AA;
+}
+
 
 .fa-gift {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
+}
+
+.fa-gift:hover{
+   color: #0022AA;
 }
 
 .fa-user-shield {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
+}
+
+.fa-user-shield:hover{
+   color: #0022AA;
 }
 
 .subtitulos {
@@ -273,8 +292,7 @@ footer {
       display: none;
    }
 
-   main section article h4,
-   nav ul {
+   h4, nav ul {
       display: none;
    }
 
@@ -294,7 +312,7 @@ footer {
 
 @media (min-width: 426px) {
 
-   
+
    .header-top {
       display: none;
    }
@@ -362,7 +380,7 @@ footer {
    }
 
 
-   .cuotas2{
+   .cuotas2 {
       display: inline-flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -417,17 +435,36 @@ footer {
       justify-content: space-evenly;
    }
 
+   main section article:hover i {
+      transform: rotateZ(-90deg);
+   }
+
+   main section article h4 {
+      transition: visibility 99ms;
+   }
+
+   main section article:hover h4{
+      visibility: visible;
+   }
+
+
    .separador article {
       margin-bottom: 25px;
    }
 
    .productos {
       background-color: white;
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
       width: 40%;
+      transition-property: box-shadow;
+      transition-duration: 450ms;
+      transition-timing-function: linear;
    }
 
-   footer article{
+   .productos:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+   footer article {
       margin-bottom: 50px;
    }
 
@@ -556,14 +593,33 @@ footer {
       margin-left: 4.2%;
       font-weight: 900px;
    }
+
+   main section article:hover i {
+      transform: rotateZ(-90deg);
+   }
    
+   main section article h4 {
+      transition: visibility 99ms;
+   }
+
+   main section article:hover h4{
+      visibility: visible;
+   }
+
 
    .productos {
       background-color: white;
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
       width: 20%;
-  
+      transition-property: box-shadow;
+      transition-duration: 450ms;
+      transition-timing-function: linear;
    }
+
+   .productos:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+
 
    .footer {
       margin: 0px 15px;
@@ -623,7 +679,7 @@ footer {
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
    .logo2 {
       display: inline-flex;
@@ -654,7 +710,7 @@ footer {
       position: absolute;
       font-size: 13px;
       right: 30px;
-      top: 44%;
+      top: 43%;
       font-weight: bold;
       color: rgb(29, 29, 29);
    }
@@ -679,5 +735,26 @@ footer {
       margin-top: 1.5%;
    }
 
-}
+   main section article:hover i {
+      transform: rotateZ(-90deg);
+   }
+   
+   main section article h4 {
+      transition: visibility 99ms;
+   }
 
+   main section article:hover h4{
+      visibility: visible;
+   }
+
+   .productos {
+      background-color: white;
+      width: 20%;
+      transition-property: box-shadow;
+   }
+
+   .productos:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+}

@@ -100,8 +100,8 @@ main {
    font-weight: lighter;
 }
 
-.boton1 {
-   background-color: rgb(33, 33, 183);
+.boton{
+   background-color: rgb(55, 55, 255);
    display: flex;
    flex-wrap: nowrap;
    flex-direction: column;
@@ -114,6 +114,12 @@ main {
    padding: 9px 0px;
    margin: 40px 0px 10px 0px;
    border: 0px;
+   transition: background-color 99ms;
+}
+
+
+.boton:hover{
+   background-color: #0022AA;
 }
 
 .descripciones {
@@ -145,19 +151,35 @@ footer {
 .fa-credit-card {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
 }
+
+.fa-credit-card:hover{
+   color: #0022AA;
+}
+
 
 .fa-gift {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
+}
+
+.fa-gift:hover{
+   color: #0022AA;
 }
 
 .fa-user-shield {
    margin-bottom: 10px;
    font-size: 2em;
-   color: #1259c3;
+   color:  rgb(55, 55, 255);
+   transition: color 99ms;
+}
+
+.fa-user-shield:hover{
+   color: #0022AA;
 }
 
 .subtitulos {
