@@ -246,7 +246,7 @@ footer {
 
    .logo1 {
       align-items: center;
-      width: 54%;
+      width: 120px;
       margin-bottom: 10px;
    }
 
@@ -273,8 +273,8 @@ footer {
    .buscador-mobile i {
       position: absolute;
       font-size: 13px;
-      right: 3px;
-      top: 14.5px;
+      right: 5px;
+      top: 14.6px;
       font-weight: bold;
       color: rgb(29, 29, 29);
    }
@@ -387,7 +387,7 @@ footer {
       font-family: "Roboto", "sans-serif";
       font-size: 10px;
       padding-right: 9px;
-      padding-top: 20px;
+      padding-top: 14px;
       font-weight: bolder;
    }
 
@@ -543,7 +543,8 @@ footer {
       font-family: "Roboto", "sans-serif";
       font-size: 11px;
       font-weight: bolder;
-      margin-top: 8px;
+      margin-top: 13px;
+      margin-right: 10px;
    }
 
    nav {
@@ -710,7 +711,7 @@ footer {
       position: absolute;
       font-size: 13px;
       right: 30px;
-      top: 43%;
+      top: 28.5px;
       font-weight: bold;
       color: rgb(29, 29, 29);
    }
